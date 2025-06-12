@@ -33,8 +33,8 @@ class TransactionResource extends Resource
                     ->relationship('room', 'name')
                     ->required(),
                 Forms\Components\TextInput::make('name')->required(),
-                Forms\Components\TextInput::make('emain')->email()->required(),
-                Forms\Components\TextInput::make('phone')->required(),
+                Forms\Components\TextInput::make('email')->email()->required(),
+                Forms\Components\TextInput::make('phone_number')->required(),
                 Forms\Components\Select::make('payment_method')
                     ->options([
                         'down_payment' => 'Down Payment',
